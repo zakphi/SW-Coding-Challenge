@@ -20,3 +20,8 @@ function setCss3Style(el, prop, val) {
   for (let i = 0, l = vendors.length; i < l; i++)
     el.style[toCamelCase(vendors[i] + prop)] = val
 }
+
+square.addEventListener('click', function() {
+  setCss3Style(square, 'transition', '3s');
+  setCss3Style(square, 'margin-left', `${newMarginLeft}px`);
+})
